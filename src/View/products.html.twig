@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8">
+  <title>Nos produits</title>
+</head>
+<body>
+  <h1>Nos instruments</h1>
+
+  <ul>
+    {% for product in products %}
+      <li>{{ product }}</li>
+    {% endfor %}
+  </ul>
+
+  <h2>Dump de la variable :</h2>
+  {{ dump(products) }}
+</body>
+</html>
